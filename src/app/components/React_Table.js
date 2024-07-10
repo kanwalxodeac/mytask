@@ -2,7 +2,6 @@ import React from 'react';
 import { useTable, useSortBy, useFilters } from 'react-table';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel, TextField, Paper } from '@mui/material';
 
-// Define a default UI for filtering
 const DefaultColumnFilter = ({ column: { filterValue, preFilteredRows, setFilter } }) => {
   const count = preFilteredRows.length;
 
@@ -42,7 +41,7 @@ const React_Table = ({ columns, data }) => {
   );
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} sx={{position:'relative'}}>
       <Table {...getTableProps()}>
         <TableHead>
           {headerGroups.map(headerGroup => (
