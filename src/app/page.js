@@ -32,7 +32,7 @@ const columns = useMemo(
 const Home = () => {
   return (
     <div>
-      <h1>Simple Table with Sorting and Filtering</h1>
+      <h1>Simple Table wit</h1>
       <React_Table columns={columns} data={data} />
     </div>
   );
